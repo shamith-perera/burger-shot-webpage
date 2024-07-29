@@ -155,7 +155,7 @@ body {
 
 .company-name {
     font-family: Russo One, sans-serif;
-    font-size: 430%;
+    font-size: 500%;
     color: white;
 }
 
@@ -228,4 +228,19 @@ footer {
     background-color: #252525;
     padding: 20px 0;
     text-align: center;
+}
+
+
+.letter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.letter.visible {
+    opacity: 1;
+}
+
+.text-wrapper{
+    color: #a53bab;
+    font-size: 450%;
 }

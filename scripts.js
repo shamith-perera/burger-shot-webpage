@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('about-link').addEventListener('click', function () {
 
     var section = document.getElementById('about');
-    var position = section.offsetTop - 200;
+    var position = section.offsetTop - 300;
     window.scrollTo({
         top: position,
         behavior: 'smooth'
@@ -70,5 +70,45 @@ document.getElementById('team-link').addEventListener('click', function () {
     });
 });
 
+const words = ["Leap.", "After.", "Lucy."];
+        let currentWordIndex = 0;
+        const textWrapper = document.getElementById("textWrapper");
+
+        function createLetters(word) {
+            textWrapper.innerHTML = ""; 
+            word.split("").forEach(letter => {
+                const span = document.createElement("span");
+                span.className = "letter";
+                span.textContent = letter;
+                textWrapper.appendChild(span);
+            });
+        }
+
+        function animateLetters() {
+            const letters = document.querySelectorAll(".letter");
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.classList.add("visible");
+                }, index * 100); 
+            });
+
+           
+            setTimeout(() => {
+                letters.forEach(letter => {
+                    letter.classList.remove("visible");
+                });
+            }, letters.length * 100 + 1000); 
+        }
+
+        function changeText() {
+            const currentWord = words[currentWordIndex];
+            createLetters(currentWord);
+            animateLetters();
+
+            currentWordIndex = (currentWordIndex + 1) % words.length;
+        }
+
+        setInterval(changeText, 2000); 
+        changeText();
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,77 +9,233 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>
+
 <body>
     <div id="loading-screen">
         <div class="loader-icon">
             <img src="img/icon.png" alt="Website Icon" id="loading-icon">
         </div>
     </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/icon.png" alt="Website Icon" id="nav-bar-icon"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#team">Our Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact us</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/icon.png" alt="Website Icon" id="nav-bar-icon">Immorta</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="team-link">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    
-    <section id="home" class="pt-5">
+
+
+    <section id="home" class="section">
         <div class="container">
-            <p>Welcome to Immorta. This is the home section.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 ">
+                    <h1>welcome to</h1>
+                    <span class="company-name">Immorta</span>
+                    <br>
+                    <span style="color:#e887b4; font-size: 200%;">TIMELESS IT SOLUTIONS</span>
+                    <p id="description">Creating the Future of Technology, One Line of Code at a Time Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Velit sunt et temporibus! Natus quo ut excepturi amet
+                        consequuntur aut maxime, fugiat voluptatum sequi officiis eligendi, placeat itaque officia sunt
+                        voluptatem.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/immortasolution/" class="social-icon"><i
+                                class="fab fa-linkedin" style="color: #0077b5;"></i></a>
+                        <a href="https://github.com" class="social-icon"><i class="fab fa-github"
+                                style="color: #4078c0;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="img/icon.png" alt="Cooldown Timer" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="pt-5">
+    <section id="about" class="section">
         <div class="container">
-            <h1>About Us</h1>
-            <p>Learn more about us in this section.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card about-card">
+                        <h1 class="about-title">Our Mission</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sed enim culpa quam,
+                            voluptatibus minus ipsum praesentium voluptatum aut. Hic corporis quia deserunt laudantium
+                            assumenda, alias facere saepe ratione maxime!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="card about-card">
+                        <h1 class="about-title">Our Vision</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sed enim culpa quam,
+                            voluptatibus minus ipsum praesentium voluptatum aut. Hic corporis quia deserunt laudantium
+                            assumenda, alias facere saepe ratione maxime!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="team" class="pt-5">
+    <section id="team" class="section">
         <div class="container">
-            <h1>Our Team</h1>
-            <p>Meet our amazing team here.</p>
+            <h1>Meet our amazing team here.</h1>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card team-card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Team member 1</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <section id="projects" class="pt-5">
+    <section id="projects" class="section">
         <div class="container">
-            <h1>Projects</h1>
+            <h1>Explore our projects in this section.</h1>
             <p>Explore our projects in this section.</p>
         </div>
     </section>
 
-    <section id="contact" class="pt-5">
+    <section id="contact" class="section">
         <div class="container">
-            <h1>Contact Us</h1>
+            <h1>Get in touch with us</h1>
             <p>Get in touch with us through this section.</p>
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Immorta ; All rights reserved</p>
+        </div>
+    </footer>
+
     <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/69e5cbf945.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

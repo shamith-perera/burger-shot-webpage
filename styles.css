@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    padding-top: 60px; 
+    padding-top: 60px;
     background-color: #1f1f1f !important;
-    color: rgb(208, 205, 205) !important;
-    font-family: "Russo One", sans-serif !important;
+    color: rgb(213, 212, 212) !important;
+    font-family: "Rubik", sans-serif !important;
 }
 
 #loading-screen {
@@ -18,7 +24,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1500;
-    background-color: black;
+    background-color: #1f1f1f;
 }
 
 .loader-icon {
@@ -26,8 +32,13 @@ body {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .hidden {
@@ -41,10 +52,12 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.5);
         opacity: 0;
     }
+
     100% {
         transform: scale(0);
         opacity: 0;
@@ -55,30 +68,35 @@ body {
     animation: break 1s forwards;
 }
 
-#loading-icon{
+#loading-icon {
     width: 250px;
     height: 200px;
 }
 
-#nav-bar-icon{
+#nav-bar-icon {
     width: 80px;
     height: 45px;
 }
 
-.navbar {
-    padding: 20px 0;
-}
+
 
 .navbar-brand {
     font-size: 24px;
-    padding-left: 30px; 
+    padding-left: 30px;
+    color: #e0e0e0 !important;
+    font-family: "Russo One", sans-serif;
 }
 
-.navbar-nav .nav-link {
+.nav-link {
     padding: 0 15px;
     font-size: 18px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
     text-align: center;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    padding-left: 100px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -92,20 +110,122 @@ body {
 
 
 .navbar-custom {
-    background-color: #1f1f1f; 
+    background-color: #252525;
+    border-bottom: 5px solid rgb(84, 84, 84);
 }
 
 
 
 .navbar-nav .nav-link {
-    color: #e0e0e0 !important; 
+    color: #e0e0e0 !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url('img/hamburger.svg') !important; 
-    background-color: transparent; 
+    background-image: url('img/hamburger.svg') !important;
+    background-color: transparent;
 }
 
 
 
+.social-icon {
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
 
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.company-name {
+    font-family: Russo One, sans-serif;
+    font-size: 430%;
+    color: white;
+}
+
+.home-logo {
+    width: 2000px;
+    height: 1000px;
+}
+
+
+#home {
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+#about {
+    margin-bottom: 150px;
+}
+
+#team {
+    margin-bottom: 150px;
+}
+
+
+#description {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-card {
+    background-color: #252525 !important;
+    border-radius: 50px !important;
+    margin-right: 5px;
+    padding: 20px !important;
+
+}
+
+.team-card {
+    background-color: #252525 !important;
+    border-radius: 25px !important;
+    margin-right: 5px;
+    padding: 20px !important;
+}
+
+p {
+    font-size: large;
+}
+
+.about-title {
+    color: #a53bab;
+}
+
+.team-card {
+    margin: 5px;
+}
+
+footer {
+    border-top: 5px solid rgb(84, 84, 84);
+    background-color: #252525;
+    padding: 20px 0;
+    text-align: center;
+}

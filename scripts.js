@@ -70,6 +70,9 @@ document.getElementById('team-link').addEventListener('click', function () {
     });
 });
 
+
+
+
 const words = ["Leap.", "After.", "Lucy."];
         let currentWordIndex = 0;
         const textWrapper = document.getElementById("textWrapper");
@@ -111,4 +114,17 @@ const words = ["Leap.", "After.", "Lucy."];
         setInterval(changeText, 2000); 
         changeText();
 
+
+        window.onscroll = function() {
+            var button = document.getElementById('backToTop');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 

@@ -244,3 +244,23 @@ footer {
     color: #a53bab;
     font-size: 450%;
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #960d7d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; 
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #49053c;
+}
+

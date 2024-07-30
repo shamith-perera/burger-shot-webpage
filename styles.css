@@ -4,6 +4,10 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body {
@@ -11,6 +15,10 @@ body {
     background-color: #1f1f1f !important;
     color: rgb(213, 212, 212) !important;
     font-family: "Rubik", sans-serif !important;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 #loading-screen {
@@ -166,7 +174,7 @@ body {
 
 
 #home {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 150px;
 }
 
@@ -175,6 +183,13 @@ body {
 }
 
 #team {
+    margin-bottom: 150px;
+}
+
+#project{
+    margin-bottom: 150px;
+}
+#contact{
     margin-bottom: 150px;
 }
 
@@ -207,8 +222,10 @@ body {
 .team-card {
     background-color: #252525 !important;
     border-radius: 25px !important;
-    margin-right: 5px;
-    padding: 20px !important;
+    padding: 5px !important;
+    margin-bottom: 15px;
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 p {
@@ -219,9 +236,7 @@ p {
     color: #a53bab;
 }
 
-.team-card {
-    margin: 5px;
-}
+
 
 footer {
     border-top: 5px solid rgb(84, 84, 84);
@@ -267,5 +282,99 @@ footer {
 
 .home-banner{
     width: 90% ;
-    
 }
+
+.team-member-image{
+    width: 130px;
+    height: 130px;
+    border-radius: 70px; 
+    margin-right: 5px;  
+    margin-left: 10px;
+}
+
+.team-card-text{
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.team-card-position{
+    color: #6b8bd1;
+}
+
+
+.team-card-position-dev{
+    color: #c398c5; 
+}
+
+.project-title{
+    color: #a53bab;
+}
+
+.project-card{
+    background-color: #252525 !important;
+    border-radius: 50px !important;
+    margin-right: 5px;
+    padding: 20px !important;
+}
+
+.project-status{
+    background-color: rgb(104, 5, 5);
+    color: rgb(191, 185, 185);
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.section-title{
+    margin-bottom: 20px;
+}
+
+.contact-title{
+    color: #a53bab;
+}
+
+.contact-form-title{
+    color: #ffffff;
+}
+
+.contact-card{
+    background-color: #252525 !important;
+    border-radius: 50px !important;
+    margin-right: 5px;
+    padding: 30px !important;
+}
+
+.contact-form{
+    background-color: #a53bab !important;
+    border-radius: 50px !important;
+    margin-right: 5px;
+    padding: 20px !important;
+}
+
+input[type="text"]{
+    background-color: #ffffff ;
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Rubik", sans-serif ;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: #ffffff ;
+    border: none;
+    border-radius: 40px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Rubik", sans-serif ;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+

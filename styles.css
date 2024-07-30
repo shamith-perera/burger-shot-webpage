@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
 
-
+/* Main styling */
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
 body {
@@ -16,11 +13,9 @@ body {
     color: rgb(213, 212, 212) !important;
     font-family: "Rubik", sans-serif !important;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
+/* Loading Screen styling */
 #loading-screen {
     display: flex;
     justify-content: center;
@@ -30,7 +25,6 @@ body {
     background: #fff;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 1500;
     background-color: #1f1f1f;
 }
@@ -53,6 +47,15 @@ body {
     display: none;
 }
 
+.break-animation {
+    animation: break 1s forwards;
+}
+
+#loading-icon {
+    width: 250px;
+    height: 200px;
+}
+
 
 
 @keyframes break {
@@ -72,20 +75,12 @@ body {
     }
 }
 
-.break-animation {
-    animation: break 1s forwards;
-}
 
-#loading-icon {
-    width: 250px;
-    height: 200px;
-}
-
+/* Navigation Bar styling */
 #nav-bar-icon {
     width: 80px;
     height: 45px;
 }
-
 
 
 .navbar-brand {
@@ -122,8 +117,6 @@ body {
     border-bottom: 5px solid rgb(84, 84, 84);
 }
 
-
-
 .navbar-nav .nav-link {
     color: #e0e0e0 !important;
 }
@@ -133,8 +126,20 @@ body {
     background-color: transparent;
 }
 
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+/* All sections common styling */
+.section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
+/* Home Page section styling */
 .social-icon {
     display: inline-block;
     font-size: 30px;
@@ -147,24 +152,15 @@ body {
 }
 
 
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
 .company-name {
     font-family: Russo One, sans-serif;
     font-size: 500%;
     color: white;
+}
+
+.company-sub-text {
+    color: #e887b4;
+    font-size: 200%;
 }
 
 .home-logo {
@@ -178,6 +174,8 @@ body {
     margin-bottom: 150px;
 }
 
+
+/* Home about section styling */
 #about {
     margin-bottom: 150px;
 }
@@ -186,10 +184,11 @@ body {
     margin-bottom: 150px;
 }
 
-#project{
+#project {
     margin-bottom: 150px;
 }
-#contact{
+
+#contact {
     margin-bottom: 150px;
 }
 
@@ -200,16 +199,7 @@ body {
 }
 
 
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
-}
 
-.section.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .about-card {
     background-color: #252525 !important;
@@ -255,7 +245,7 @@ footer {
     opacity: 1;
 }
 
-.text-wrapper{
+.text-wrapper {
     color: #a53bab;
     font-size: 450%;
 }
@@ -264,60 +254,58 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #960d7d;
+    background-color: #2d4b8e;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    display: none; 
+    display: none;
     z-index: 1000;
 }
 
 #backToTop:hover {
-    background-color: #49053c;
+    background-color: #182f61;
 }
 
 
-.home-banner{
-    width: 90% ;
-}
 
-.team-member-image{
+
+.team-member-image {
     width: 130px;
     height: 130px;
-    border-radius: 70px; 
-    margin-right: 5px;  
+    border-radius: 70px;
+    margin-right: 5px;
     margin-left: 10px;
 }
 
-.team-card-text{
+.team-card-text {
     margin-top: 30px;
     margin-left: 5px;
 }
 
-.team-card-position{
+.team-card-position {
     color: #6b8bd1;
 }
 
 
-.team-card-position-dev{
-    color: #c398c5; 
+.team-card-position-dev {
+    color: #c398c5;
 }
 
-.project-title{
+.project-title {
     color: #a53bab;
 }
 
-.project-card{
+.project-card {
     background-color: #252525 !important;
     border-radius: 50px !important;
     margin-right: 5px;
     padding: 20px !important;
 }
 
-.project-status{
+.project-status {
     background-color: rgb(104, 5, 5);
     color: rgb(191, 185, 185);
     border-radius: 30px;
@@ -327,54 +315,83 @@ footer {
     font-weight: bold;
 }
 
-.section-title{
+.section-title {
     margin-bottom: 20px;
 }
 
-.contact-title{
+.contact-title {
     color: #a53bab;
 }
 
-.contact-form-title{
-    color: #ffffff;
+.contact-form-title {
+    color: #e2dcdc;
 }
 
-.contact-card{
+.contact-card {
     background-color: #252525 !important;
     border-radius: 50px !important;
     margin-right: 5px;
     padding: 30px !important;
 }
 
-.contact-form{
-    background-color: #a53bab !important;
+.contact-form {
+    background-color: #832488 !important;
     border-radius: 50px !important;
     margin-right: 5px;
     padding: 20px !important;
 }
 
-input[type="text"]{
-    background-color: #ffffff ;
+input[type="text"] {
+    background-color: #e2dcdc;
     border: none;
     border-radius: 40px;
     height: 50px;
+    width: 320px;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: "Rubik", sans-serif ;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-textarea{
-    background-color: #ffffff ;
+textarea {
+    background-color: #e2dcdc;
     border: none;
     border-radius: 40px;
     height: 200px;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: "Rubik", sans-serif ;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
+.contact-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.project-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+
+#send-btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-family: "Rubik", sans-serif;
+    border-radius: 40px;
+    font-weight: 500;
+    background-color: #252525;
+    color: #e2dcdc;
+    border: none;
+}
+
+#send-btn:hover {
+    background-color: #505050;
+}

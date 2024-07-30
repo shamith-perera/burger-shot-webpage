@@ -11,72 +11,71 @@
 </head>
 
 <body>
+    <!--Loading Screen-->
     <div id="loading-screen">
         <div class="loader-icon">
-            <img src="img/icon.png" alt="Website Icon" id="loading-icon">
+            <img src="img/icon.png" alt="company-icon" id="loading-icon">
         </div>
     </div>
 
+    <!--Top Navgation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/icon.png" alt="Website Icon" id="nav-bar-icon">Immorta</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <a class="navbar-brand" href="#"><img src="img/icon.png" alt="Website Icon" id="nav-bar-icon">Immorta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="about-link">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="team-link">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="project-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact-link">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="team-link">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="project-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-link">Contact us</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
 
-
+    <!--Home page section-->
     <section id="home" class="section">
-        <div class="home-banner ml-3 ml-lg-auto">
-            <div class="row align-items-center">
-                <div class="col-md-6 ">
-                    <h1>welcome to</h1>
-                    <span class="company-name">Immorta</span>
-                    <br>
-                    <span style="color:#e887b4; font-size: 200%;">TIMELESS IT SOLUTIONS</span><br>
-                    <div class="text-wrapper" id="textWrapper"> </div>
-                    <p id="description">We excel in delivering optimal technical solutions to solve your
-                        challenges. From innovative problem-solving to cutting-edge technologies, we are committed to
-                        transforming complexities into opportunities. Join us in shaping a limitless future with
-                        unparalleled expertise and dedication.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/immortasolution/" class="social-icon"><i
-                                class="fab fa-linkedin" style="color: #0077b5;"></i></a>
-                        <a href="https://github.com" class="social-icon"><i class="fab fa-github"
-                                style="color: #4078c0;"></i></a>
-                    </div>
+        <div class="row align-items-center ml-1">
+            <div class="col-md-5 ml-auto">
+                <h1>welcome to</h1>
+                <span class="company-name">Immorta</span>
+                <br>
+                <span class="company-sub-text">TIMELESS IT SOLUTIONS</span><br>
+                <div class="text-wrapper" id="textWrapper"> </div>
+                <p id="description">We excel in delivering optimal technical solutions to solve your
+                    challenges. From innovative problem-solving to cutting-edge technologies, we are committed to
+                    transforming complexities into opportunities. Join us in shaping a limitless future with
+                    unparalleled expertise and dedication.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/immortasolution/" class="social-icon"><i
+                            class="fab fa-linkedin" style="color: #0077b5;"></i></a>
+                    <a href="https://github.com" class="social-icon"><i class="fab fa-github"
+                            style="color: #4078c0;"></i></a>
                 </div>
-                <div class="col-md-6 ">
-                    <img src="img/icon.png" alt="Cooldown Timer" class="img-fluid">
-                </div>
+            </div>
+            <div class="col-md-5 ml-auto">
+                <img src="img/icon.png" alt="Cooldown Timer" class="img-fluid">
             </div>
         </div>
     </section>
 
+    <!--About section-->
     <section id="about" class="section">
         <div class="container">
             <h1>We are here for.</h1>
@@ -100,6 +99,7 @@
         </div>
     </section>
 
+    <!--Team section-->
     <section id="team" class="section">
         <div class="container">
             <h1 class="section-title">Meet our amazing team here.</h1>
@@ -197,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md- 6col-sm-12 col-12">
+                    <div class="col-lg-5 col-md-6 6col-sm-12 col-12">
                         <div class="card team-card">
                             <img src="img/team/fathima.jpg" alt="" class="team-member-image">
                             <div class="team-card-text">
@@ -241,14 +241,17 @@
         </div>
     </section>
 
+    <!--project section-->
     <section id="project" class="section">
         <div class="container">
-            <h1 class="section-title">Explore our projects in this section.</h1>
+            <h1 class="section-title">Explore our projects.</h1>
             <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12 mb-3">
                     <div class="card project-card">
                         <h1 class="project-title">Lawyers Street</h1>
-                        <p> Specialized platform designed for lawyers and clients to facilitate online appointments and meetings.</p>
+                        <img src="img/lawyer.png" alt="" class="project-image">
+                        <p> Specialized platform designed for lawyers and clients to facilitate online appointments and
+                            meetings.</p>
                         <div class="project-status">
                             Under Proposal Status
                         </div>
@@ -259,34 +262,40 @@
         </div>
     </section>
 
+    <!--contact section-->
     <section id="contact" class="section">
-        <div class="container">
-            <h1 class="section-title">Get in touch with us</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card contact-card">
-                        <h3 class="contact-title">Contact Us</h3>
-                        <h4>+9477XXXXXX</h4>
-                        <h3 class="contact-title">Email Us</h3>
-                        <h4>immorta.solutions@gmail.com</h4>
-                        <h3 class="contact-title">Locate Us</h3>
-                        <iframe style="border-radius: 50px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.550111578184!2d79.9074921!3d6.7224779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae247a4c04ae595%3A0x4060e3527ce41470!2siCET%20-%20Institute%20of%20Computer%20Engineering%20Technology!5e0!3m2!1sen!2slk!4v1722326058279!5m2!1sen!2slk" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-md-4 col-md-5 col-sm-11 mb-3 m-2 ml-md-4 m-lg-auto ">
+                <div class="card contact-card">
+                    <h4 class="contact-title"><img src="img/phone.png" class="contact-icon">&nbsp;Contact Us</h4>
+                    <h5>+9477XXXXXX</h5>
+                    <h4 class="contact-title"><img src="img/email.png" class="contact-icon">&nbsp;&nbsp;Email Us</h4>
+                    <h5>immorta.solutions@gmail.com</h5>
+                    <h4 class="contact-title"><img src="img/location.png" class="contact-icon">&nbsp;&nbsp;Locate Us
+                    </h4>
+                    <h5>223 A 1/2 Galle Rd, Panadura 12500</h5>
+                    <iframe style="border-radius: 50px;"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.550111578184!2d79.9074921!3d6.7224779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae247a4c04ae595%3A0x4060e3527ce41470!2siCET%20-%20Institute%20of%20Computer%20Engineering%20Technology!5e0!3m2!1sen!2slk!4v1722326058279!5m2!1sen!2slk"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="card contact-form">
-                        <h1 class="contact-form-title">Leave us a Message</h1>
-                        <input type="text" id="name-input" placeholder="Name">
-                        <input type="text" id="emai-input" placeholder="Email ">
-                        <textarea name="msg" id="msg" placeholder="your message.."></textarea>
-                    </div>
+            </div>
+            <div class="col-md-6 col-sm-11  mb-3 m-2 m-lg-auto">
+                <div class="card contact-form">
+                    <h1 class="contact-form-title">Leave us a Message</h1>
+                    <input type="text" id="name-input" placeholder="Name">
+                    <input type="text" id="emai-input" placeholder="Email ">
+                    <textarea name="msg" id="msg" placeholder="Your Message.."></textarea>
+                    <button id="send-btn">Send</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--back to top button-->
     <button id="backToTop" onclick="scrollToTop()">↑</button>
 
+    <!--Bottom Footer-->
     <footer>
         <div class="container">
             <p>&copy; 2024 Immorta ; All rights reserved</p>

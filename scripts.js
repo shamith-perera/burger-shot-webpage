@@ -49,7 +49,7 @@ document.getElementById('team-link').addEventListener('click', function () {
 document.getElementById('project-link').addEventListener('click', function () {
 
     var section = document.getElementById('project');
-    var position = section.offsetTop - 200;
+    var position = section.offsetTop - 150;
     window.scrollTo({
         top: position,
         behavior: 'smooth'

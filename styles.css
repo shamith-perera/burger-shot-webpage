@@ -126,16 +126,27 @@ body {
     background-color: transparent;
 }
 
+
+
+/* All sections common styling */
 .section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1.5s ease, transform 1.5s ease;
+    margin-bottom: 150px;
 }
 
-/* All sections common styling */
+p {
+    font-size: large;
+}
+
 .section.animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+.section-title {
+    margin-bottom: 20px;
 }
 
 
@@ -163,6 +174,11 @@ body {
     font-size: 200%;
 }
 
+#description {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
 .home-logo {
     width: 2000px;
     height: 1000px;
@@ -171,36 +187,10 @@ body {
 
 #home {
     margin-top: 100px;
-    margin-bottom: 150px;
 }
 
 
-/* Home about section styling */
-#about {
-    margin-bottom: 150px;
-}
-
-#team {
-    margin-bottom: 150px;
-}
-
-#project {
-    margin-bottom: 150px;
-}
-
-#contact {
-    margin-bottom: 150px;
-}
-
-
-#description {
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-
-
-
-
+/* about section styling */
 .about-card {
     background-color: #252525 !important;
     border-radius: 50px !important;
@@ -209,6 +199,13 @@ body {
 
 }
 
+.about-title {
+    color: #a53bab;
+}
+
+
+
+/* team section styling */
 .team-card {
     background-color: #252525 !important;
     border-radius: 25px !important;
@@ -217,60 +214,6 @@ body {
     display: flex !important;
     flex-direction: row !important;
 }
-
-p {
-    font-size: large;
-}
-
-.about-title {
-    color: #a53bab;
-}
-
-
-
-footer {
-    border-top: 5px solid rgb(84, 84, 84);
-    background-color: #252525;
-    padding: 20px 0;
-    text-align: center;
-}
-
-
-.letter {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.letter.visible {
-    opacity: 1;
-}
-
-.text-wrapper {
-    color: #a53bab;
-    font-size: 450%;
-}
-
-#backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2d4b8e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
-}
-
-#backToTop:hover {
-    background-color: #182f61;
-}
-
-
-
 
 .team-member-image {
     width: 130px;
@@ -294,6 +237,7 @@ footer {
     color: #c398c5;
 }
 
+/*project section styling */
 .project-title {
     color: #a53bab;
 }
@@ -315,10 +259,15 @@ footer {
     font-weight: bold;
 }
 
-.section-title {
+.project-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
     margin-bottom: 20px;
 }
 
+
+/*contact section styling */
 .contact-title {
     color: #a53bab;
 }
@@ -372,17 +321,9 @@ textarea {
     height: 40px;
 }
 
-.project-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 40px;
-    margin-bottom: 20px;
-}
-
-
 #send-btn {
     margin-top: 20px;
-    width: 200px;
+    width: 100px;
     height: 40px;
     font-family: "Rubik", sans-serif;
     border-radius: 40px;
@@ -394,4 +335,49 @@ textarea {
 
 #send-btn:hover {
     background-color: #505050;
+}
+
+/*Back to top button  styling */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2d4b8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #182f61;
+}
+
+
+/*Footer section styling */
+footer {
+    border-top: 5px solid rgb(84, 84, 84);
+    background-color: #252525;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/*Home page text changing effect styling */
+.letter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.letter.visible {
+    opacity: 1;
+}
+
+.text-wrapper {
+    color: #a53bab;
+    font-size: 450%;
 }

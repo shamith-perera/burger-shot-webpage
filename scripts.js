@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Home page text changing effect
-const words = ["Leap.", "After.", "Lucy."];
+const words = ["Leap", "after", "lucy."];
 let currentWordIndex = 0;
 const textWrapper = document.getElementById("textWrapper");
 
